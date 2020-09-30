@@ -17,4 +17,6 @@ describe StudentsController do
     end
   end
 
+  `specs/controllers/students_controller_spec.rb`
+
 end
