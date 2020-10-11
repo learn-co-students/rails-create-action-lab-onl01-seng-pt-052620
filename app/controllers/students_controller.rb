@@ -9,9 +9,13 @@ class StudentsController < ApplicationController
   end
 
   def new
+    @student = Student.new
+    render :new
   end
 
   def create
+    @student = Student.new(first_name: params[:first_name], last_name: params[:last_name])
+    redirect_to student_path(@student) if @student.save
   end
 
 end
