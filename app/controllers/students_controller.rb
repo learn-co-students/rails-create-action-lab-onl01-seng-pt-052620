@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
 
   def new
-    render "new.html"
+   
   end
 
   def create
